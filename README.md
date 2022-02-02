@@ -1,2 +1,2 @@
 # ab490.github.io
-My GitHub Page Repository.
+My GitHub Pages Repository.
