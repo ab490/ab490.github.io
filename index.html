@@ -40,6 +40,9 @@
         
         <!--responsive.css-->
         <link rel="stylesheet" href="assets/css/responsive.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-X..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     </head>
 	
 	<body>
@@ -70,6 +73,7 @@
 			                    <li class="smooth-menu"><a href="#experience">experience</a></li>
 			                    <li class="smooth-menu"><a href="#profiles">positions</a></li>
 			                    <li class="smooth-menu"><a href="#projects">projects</a></li>
+								<li class="smooth-menu"><a href="#publications">publications</a></li>
 			                    <li class="smooth-menu"><a href="#achievements">achievements</a></li>
 			                    <li class="smooth-menu"><a href="#contact">contact</a></li>
 			                </ul><!--/.nav -->
@@ -844,6 +848,52 @@
 		</section><!--/.projects-->
 		<!--projects end -->
 
+<!--publications start-->
+<section id="publications" class="publications">
+    <div class="publications-details">
+				<div class="section-heading text-center">
+					<h2>Publications</h2>
+				</div>
+				<div class="container">
+        <div class="publications-content">
+            <div class="publication-item">
+                <h3 class="publication-title">
+                    <a href="https://aclanthology.org/2025.naacl-long.448/" target="_blank">
+                        Emergence of Episodic Memory in Transformers: Characterizing Changes in Temporal Structure of Attention Scores During Training
+                    </a>
+                </h3>
+                <p class="publication-authors">
+                    Deven Mahesh Mistry, Anooshka Bajaj, Yash Aggarwal, Sahaj Singh Maini, Zoran Tiganj
+                </p>
+                <p class="publication-venue">
+                    <em>Proceedings of the 2025 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL 2025)</em>
+                </p>
+                <p class="publication-meta">
+                    Pages: 8893–8911 | Albuquerque, New Mexico
+                </p>
+                <p class="publication-abstract">
+                    <strong>Abstract:</strong><br> We investigate in-context temporal biases in attention heads and transformer outputs. Using cognitive science methodologies, we analyze attention scores and outputs of the GPT-2 models of varying sizes. Across attention heads, we observe effects characteristic of human episodic memory, including temporal contiguity, primacy and recency. Transformer outputs demonstrate a tendency toward in-context serial recall. Importantly, this effect is eliminated after the ablation of the induction heads, which are the driving force behind the contiguity effect. Our findings offer insights into how transformers organize information temporally during in-context learning, shedding light on their similarities and differences with human memory and learning.
+                </p>
+                <div class="publication-buttons">
+                    <a href="https://aclanthology.org/2025.naacl-long.448/" target="_blank">ACL Anthology</a>
+                    <a href="https://arxiv.org/abs/2502.06902" target="_blank">DOI</a>
+                    <a href="https://aclanthology.org/2025.naacl-long.448.pdf" target="_blank">PDF</a>
+                </div>
+<div class="citation">
+    <strong>Citation (APA):</strong><br>
+    Mistry, D. M., Bajaj, A., Aggarwal, Y., Maini, S. S., & Zoran Tiganj. (2025). Emergence of Episodic Memory in Transformers: Characterizing Changes in Temporal Structure of Attention Scores During Training. ACL Anthology, 8893–8911.
+    <a href="https://aclanthology.org/2025.naacl-long.448/" target="_blank">https://aclanthology.org/2025.naacl-long.448/</a>
+    <span class="copy-citation-icon" onclick="copyCitation()"><i class="fa-regular fa-clipboard"></i></span>
+</div>
+
+            </div>
+			</div>
+        </div>
+    </div>
+</section>
+<!--publications end-->
+
+
 		<!--achievements start -->
 		<section id="achievements" class="achievements">
 			<div class="achievements-details">
@@ -1064,7 +1114,16 @@
         
         <!--Custom JS-->
         <script src="assets/js/custom.js"></script>
-        
+
+<script>
+function copyCitation() {
+    const citation = `Mistry, D. M., Bajaj, A., Aggarwal, Y., Maini, S. S., & Tiganj, Z. (2025). Emergence of episodic memory in transformers: Characterizing changes in temporal structure of attention scores during training. Proceedings of the 2025 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers), 8893–8911. Association for Computational Linguistics. https://aclanthology.org/2025.naacl-long.448/`;
+    navigator.clipboard.writeText(citation).then(() => {
+        alert("Citation copied to clipboard!");
+    });
+}
+</script>
+
     </body>
 	
 </html>

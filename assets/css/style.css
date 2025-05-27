@@ -10,20 +10,21 @@ font-family: 'Poppins', sans-serif;
 
 
 /*=========== TABLE OF CONTENTS ===========
-1.  General css (Reset code)
+1.  General css 
 2.  Header
-3.  Welcome-hero
-4.  About me 
+3.  Welcome
+4.  About
 5.  Education
-6.  Skill
+6.  Skills
 7.  Experience
 8.  Profiles
 9.  Projects
-10. Clients
-11. Contact
+10. Publications
+11. Experience
+12. Contact
 
 /*-------------------------------------
-		1.General css (Reset code)
+		1.General css 
 --------------------------------------*/
 *{
     padding: 0;
@@ -138,7 +139,7 @@ nav.navbar.bootsnav ul.nav > li > a {
     -o-transition: 0.3s linear; 
     transition: 0.3s linear;
 }
-nav.navbar.bootsnav ul.nav > li > a {padding: 35px 20px;}
+nav.navbar.bootsnav ul.nav > li > a {padding: 35px 15px;}
 nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:focus,nav.navbar.bootsnav ul.nav > li.active>a{color: #d92cf9;}
 
 nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:after {
@@ -183,7 +184,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 
 
 /*-------------------------------------
-        3.  Welcome-hero
+        3.  Welcome
 --------------------------------------*/
 .welcome-hero{
     display: flex;
@@ -677,8 +678,169 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 100px;}
     transform:scale(1);
     top:0;
 }/*.isotope-overlay*/
+
 /*-------------------------------------
-        10. Achievements
+        10. Publications
+--------------------------------------*/
+/* Publications Section */
+.publications {
+    padding: 50px 0;
+    border: 1px solid #e5ebf2;
+}
+
+.publications-content {
+    padding-top: 75px;
+}
+
+.publication-item {
+    position: relative;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-left: 4px solid #d92cf9;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border-radius: 4px;
+    transition: box-shadow 0.3s ease;
+}
+
+.publication-item:hover {
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.publication-title {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #d92cf9;
+}
+
+.publication-title a {
+    color: #d92cf9;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.publication-authors {
+    font-weight: 500;
+    font-size: 15px;
+    color: #43485c;
+    margin-bottom: 10px;
+}
+
+.publication-venue {
+    font-style: italic;
+    color: #999fb3;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.publication-meta {
+    font-size: 15px;
+    color: #676a81;
+    margin-bottom: 15px;
+}
+
+/* Unified Abstract and Citation Blocks */
+.publication-abstract,
+.citation {
+    background: #f9f9ff;
+    border-left: 4px solid #d92cf9;
+    border-radius: 6px;
+    padding: 15px 20px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Abstract Heading */
+.publication-abstract strong,
+.citation strong {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Citation Link */
+.citation a {
+    color: #d92cf9;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+/* Inline Copy Button */
+/* Citation Block */
+.citation {
+    position: relative;
+    background: #f9f9ff;
+    border-left: 4px solid #d92cf9;
+    border-radius: 6px;
+    padding: 15px 20px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.citation strong {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.citation a {
+    color: #d92cf9;
+    text-decoration: underline;
+}
+
+/* Copy button positioned inside citation */
+.copy-citation-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 16px;
+    font-size: 12px;
+    padding: 4px 8px;
+    background-color: #d92cf9;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.copy-citation-icon:hover {
+    background-color: #9f00ff;
+}
+
+/* Publication Buttons */
+.publication-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.publication-buttons a {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 4px;
+    background-color: #d92cf9;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.publication-buttons a:hover {
+    background-color: #9f00ff;
+}
+
+
+/*-------------------------------------
+        11. Achievements
 --------------------------------------*/
 .achievements {
     padding:  50px 0 50px;
@@ -754,7 +916,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 100px;}
 .single-achievements:hover .achievements-icon-name,.single-achievements:hover .achievements-txt a>i{color: #fff;}
 .single-achievements:hover .achievements-border {border:transparent;}
 /*-------------------------------------
-        11. Contact
+        12. Contact
 --------------------------------------*/
 .contact {
     background: #f9fbfd;
@@ -816,7 +978,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 100px;}
     box-shadow: 0 5px 20px rgba(0,0,0,.2);
 }
 
-/*--contct button--*/
+/*--contact button--*/
 
 /* contact-adress */
 .contact-add-head h3 {
