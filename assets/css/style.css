@@ -473,10 +473,11 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 100px;}
 .main-timeline{
     position: relative;
 }
+
 .main-timeline:before{
     content: "";
     width: 2px;
-    height: 83.5%;
+    height: 86%;
     background: #b2c1ce;
     position: absolute;
     top: 0.5%;
