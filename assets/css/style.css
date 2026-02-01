@@ -838,6 +838,106 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 100px;}
     background-color: #9f00ff;
 }
 
+/* ---------------------------------------
+        11. Media Coverage
+--------------------------------------*/
+
+.media .single-media-item{
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(230,0,229,0.25);
+  border-radius: 14px;
+  padding: 18px 18px;
+  margin-bottom: 18px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.media .single-media-item:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.18);
+}
+
+.media .media-title a{
+  color: #E600E5;
+  text-decoration: none;
+}
+
+.media .media-title a:hover{
+  text-decoration: underline;
+}
+
+.media .media-meta{
+  margin-top: 6px;
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.media .media-desc{
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.media .media-tags{
+  margin-top: 10px;
+}
+
+.media .media-tag{
+  display: inline-block;
+  border: 1px solid rgba(230,0,229,0.35);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  margin-right: 8px;
+  margin-top: 6px;
+  opacity: 0.95;
+}
+
+.media .media-actions{
+  margin-top: 14px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.media .media-btn-secondary {
+  border-style: dashed;
+}
+
+
+.media .media-btn{
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(230,0,229,0.45);
+  color: #E600E5;         
+  background: transparent;  
+  text-decoration: none;
+}
+
+.media .media-btn:hover{
+  background: rgba(230,0,229,0.12);
+  text-decoration: none;
+}
+
+/* Media image preview */
+.media-image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 14px;
+}
+
+.media-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.single-media-item:hover .media-image img {
+  transform: scale(1.05);
+}
+
 
 /*-------------------------------------
         11. Achievements
