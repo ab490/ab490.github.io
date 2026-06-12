@@ -55,6 +55,11 @@ a,a:hover,a:active,a:focus {
 	font-size:16px;
 	padding:0;
 }
+.follow-link,
+.follow-link:hover,
+.follow-link:focus {
+	color: #E600E5;
+}
 h1,h2,h3,h4,h5,h6 { 
 	margin: 0;
 	color:#43485c;
@@ -368,6 +373,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 100px;}
 .timeline-content .description {
     font-size: 14.5px;
     color: #999fb3;
+    margin-bottom: 20px;
 }
 
 /*.timeline-horizontal-border*/
@@ -509,6 +515,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 100px;}
 .main-timeline .description {
     font-size: 14.5px;
     color: #999fb3;
+    margin-bottom: 20px;
 }
 .main-timeline .timeline-content.right{
     float: right;
@@ -562,6 +569,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 100px;}
     text-transform: capitalize;
     color: #636a82;
     font-size: 16px;
+    text-align: center;
 }
 .single-profile.profile-no-border{border-right:transparent;}
 .profile-border {
@@ -594,7 +602,8 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 100px;}
     -o-transition: .5s;
     transition: .5s;
 }
-.single-profile:hover .single-profile-overlay{
+.single-profile:hover .single-profile-overlay,
+.single-profile:focus-within .single-profile-overlay {
     -webkit-transform:scale(1);
     -moz-transform:scale(1);
     -ms-transform:scale(1);
@@ -607,6 +616,14 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 100px;}
 /*-------------------------------------
         9. Projects
 --------------------------------------*/
+.tech-stack {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #43485c;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+}
 .projects {
     padding:  50px 0 50px;
     border:  1px solid #e5ebf2;
@@ -974,6 +991,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 100px;}
     text-transform: capitalize;
     color: #636a82;
     font-size: 16px;
+    text-align: center;
 }
 .single-achievements.achievements-no-border{border-right:transparent;}
 .achievements-border {
@@ -1006,7 +1024,8 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 100px;}
     -o-transition: .5s;
     transition: .5s;
 }
-.single-achievements:hover .single-achievements-overlay{
+.single-achievements:hover .single-achievements-overlay,
+.single-achievements:focus-within .single-achievements-overlay {
     -webkit-transform:scale(1);
     -moz-transform:scale(1);
     -ms-transform:scale(1);
@@ -1183,4 +1202,133 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 100px;}
     0%   {bottom:0px;}
     100%  {bottom:7px;}
 }
+/*===============================
+    Theme Toggle Button
+===============================*/
+#theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    float: right;
+    padding: 14px 10px;
+    color: #6a708e;
+    font-size: 16px;
+    line-height: 1;
+    -webkit-transition: color 0.3s linear;
+    transition: color 0.3s linear;
+}
+#theme-toggle:hover,
+#theme-toggle:focus {
+    color: #d92cf9;
+    outline: none;
+}
+@media (min-width: 768px) {
+    #theme-toggle {
+        position: fixed;
+        right: 20px;
+        top: 0;
+        padding: 35px 10px;
+        float: none;
+        z-index: 99999;
+    }
+}
+
+/*===============================
+    Dark Mode
+===============================*/
+body {
+    -webkit-transition: background-color 0.2s ease, color 0.2s ease;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+[data-theme="dark"] body {
+    background: #121212;
+    color: #c9cdd8;
+}
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6 { color: #e0e3ed; }
+[data-theme="dark"] p { color: #c0c3ce; }
+
+/* Nav */
+[data-theme="dark"] nav.navbar.bootsnav,
+[data-theme="dark"] nav.navbar.bootsnav.no-background {
+    background-color: #1a1a1a;
+    box-shadow: 0 3px 15px rgba(0,0,0,.5);
+}
+[data-theme="dark"] nav.navbar.bootsnav ul.nav > li > a,
+[data-theme="dark"] .sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a { color: #c9cdd8; }
+[data-theme="dark"] #theme-toggle { color: #c9cdd8; }
+
+/* Section headings */
+[data-theme="dark"] .section-heading h2 { border-bottom-color: #2a2a2a; }
+
+/* About */
+[data-theme="dark"] .single-about-txt h3 { color: #d0d3de; }
+[data-theme="dark"] .single-about-txt p { color: #aaa; border-bottom-color: #2a2a2a; }
+[data-theme="dark"] .single-about-add-info h3 { color: #aaa; }
+
+/* Education */
+[data-theme="dark"] .education { background: #181818; }
+[data-theme="dark"] span.single-timeline-horizontal { background: #333; }
+[data-theme="dark"] .single-horizontal-timeline p { color: #888; }
+[data-theme="dark"] .timeline-content h5 { color: #999; }
+
+/* Experience */
+[data-theme="dark"] .experience { border-top-color: #2a2a2a; }
+[data-theme="dark"] .main-timeline:before { background: #333; }
+[data-theme="dark"] .experience-time h3 { color: #999; }
+[data-theme="dark"] .main-timeline .description,
+[data-theme="dark"] .timeline-content .description { color: #888; }
+
+/* Publications */
+[data-theme="dark"] .publications { border-color: #2a2a2a; }
+[data-theme="dark"] .publication-item {
+    background: #1e1e1e;
+    box-shadow: 0 5px 15px rgba(0,0,0,.4);
+}
+[data-theme="dark"] .publication-authors { color: #c9cdd8; }
+[data-theme="dark"] .publication-venue { color: #888; }
+[data-theme="dark"] .publication-meta { color: #aaa; }
+[data-theme="dark"] .publication-abstract,
+[data-theme="dark"] .citation { background: #252525; color: #c0c3ce; }
+[data-theme="dark"] .citation a { color: #d92cf9; }
+
+/* Media */
+[data-theme="dark"] .media .single-media-item { background: rgba(255,255,255,0.02); }
+[data-theme="dark"] .media .media-title a { color: #e066ff; }
+[data-theme="dark"] .media .media-desc { color: #c0c3ce; }
+
+/* Profiles */
+[data-theme="dark"] .profiles { border-color: #2a2a2a; }
+[data-theme="dark"] .single-profile { border-right-color: #2a2a2a; }
+[data-theme="dark"] .profile-icon-name { color: #aaa; }
+
+/* Projects */
+[data-theme="dark"] .projects { border-color: #2a2a2a; }
+[data-theme="dark"] .tech-stack { color: #e0e3ed; }
+
+/* Achievements */
+[data-theme="dark"] .achievements { border-color: #2a2a2a; }
+[data-theme="dark"] .single-achievements { border-right-color: #2a2a2a; }
+[data-theme="dark"] .achievements-icon-name { color: #aaa; }
+
+/* Contact */
+[data-theme="dark"] .contact { background: #181818; }
+[data-theme="dark"] .contact-form .form-control {
+    background: #2a2a2a;
+    border-color: #333;
+    color: #c9cdd8;
+}
+[data-theme="dark"] .contact-form .form-control::placeholder { color: #666; }
+[data-theme="dark"] .contact-add-head h3 { color: #e0e3ed; }
+[data-theme="dark"] .single-contact-add-info h3 { color: #aaa; }
+[data-theme="dark"] .single-contact-add-info p { color: #888; }
+
+/* Footer */
+[data-theme="dark"] .hm-foot-icon ul li > a { color: #aaa; }
+[data-theme="dark"] .hm-footer-copyright p { color: #555; }
+
 /*========================Thank you=================
