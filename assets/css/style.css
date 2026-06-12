@@ -483,7 +483,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 100px;}
 .main-timeline:before{
     content: "";
     width: 2px;
-    height: 86%;
+    height: 87%;
     background: #b2c1ce;
     position: absolute;
     top: 0.5%;
@@ -570,6 +570,10 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 100px;}
     color: #636a82;
     font-size: 16px;
     text-align: center;
+    margin-top: 8px;
+}
+.single-profile-overlay .profile-icon-name p {
+    color: #fff;
 }
 .single-profile.profile-no-border{border-right:transparent;}
 .profile-border {
@@ -618,12 +622,39 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 100px;}
 --------------------------------------*/
 .tech-stack {
     margin: 0;
+    margin-top: 10px;
     font-size: 16px;
     font-weight: 600;
     color: #43485c;
     font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
 }
+.projects .timeline-content { margin-bottom: 40px; }
+.projects .timeline-content h4.title {
+    font-size: 18px;
+}
+.projects ul.description {
+    list-style: disc;
+    padding-left: 18px;
+    margin-top: 10px;
+}
+.projects ul.description li {
+    list-style: disc;
+    margin-bottom: 5px;
+}
+.project-image-col a { display: block; }
+.project-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    display: block;
+}
+@media (max-width: 767px) {
+    .project-image-col { margin-bottom: 14px; }
+}
+[data-theme="dark"] .project-img { border-color: #444; }
 .projects {
     padding:  50px 0 50px;
     border:  1px solid #e5ebf2;
@@ -992,6 +1023,10 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 100px;}
     color: #636a82;
     font-size: 16px;
     text-align: center;
+    margin-top: 8px;
+}
+.single-achievements-overlay .achievements-icon-name p {
+    color: #fff;
 }
 .single-achievements.achievements-no-border{border-right:transparent;}
 .achievements-border {
